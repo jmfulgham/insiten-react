@@ -1,0 +1,34 @@
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover,
+a:active {
+  color: #44a9f8;
+  cursor: pointer;
+}
+
+a:visited {
+  color: black;
+}
+
+.logo {
+  display: inline;
+  padding: 10px;
+}
+
+nav {
+  font-size: 20px;
+  text-align: right;
+}
+
+/* .nav-logo {
+  margin: 20px;
+} */
+
+li {
+  list-style: none;
+  padding: 2px;
+  display: inline;
+}
