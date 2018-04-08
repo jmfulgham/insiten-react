@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NavigationBar from './components/navigation-bar';
+// import NavigationBar from './components/navigation-bar';
 import CreateForm from './components/create-form';
 import './index.css';
 import './responsive.css';

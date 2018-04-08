@@ -7,7 +7,7 @@ export default class CreateForm extends React.Component {
   constructor(props){
     super(props);
     this.addItem = this.addItem.bind(this);
-    
+
     this.state = {
       companyList:
       [ {
@@ -64,8 +64,19 @@ export default class CreateForm extends React.Component {
     this._contacts.value="";
     this._financialPerformance.value="";
     
-    console.log(this.state.companyList);
-    console.log(newCompany);
+  }
+  
+  
+  deleteItem(company){
+    
+    let filteredList = this.state.companyList.filter(function (item){
+      
+      return (company["Company Code"] !== item["Company Code"]);
+    })
+    
+       this.setState({
+     companyList: filteredList
+  });
   }
   
   
@@ -101,8 +112,8 @@ export default class CreateForm extends React.Component {
       </form>
       </section>
       </div>
-
-<Companies entries={this.state.companyList}/>
+{/* its not passing a delete function? */}
+<Companies entries={this.state.companyList} deleteItem={company => this.deleteItem(company)} />
       </div>
     
     );
