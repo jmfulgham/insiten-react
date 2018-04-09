@@ -9,8 +9,12 @@ a:active {
   cursor: pointer;
 }
 
-a:visited {
-  color: black;
+/* a:visited {
+  color: #44a9f8;
+}
+ */
+img {
+  margin: 5px;
 }
 
 .logo {
@@ -19,8 +23,10 @@ a:visited {
 }
 
 nav {
+  display: inline;
   font-size: 20px;
   text-align: right;
+  
 }
 
 /* .nav-logo {

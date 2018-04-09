@@ -1,4 +1,11 @@
 import React from 'react';
+import './companies.css';
+import Company from './company';
+
+//Company component - if and else in the render method
+//if and else will have the input or it will display the data
+//input MDN docs- React examples
+// toggle on each com
 
 
 export default class Companies extends React.Component{
@@ -6,31 +13,20 @@ export default class Companies extends React.Component{
     super(props);
     
     this.state= {toggle:null,
-                text: 'Edit'}
+                text: 'Edit'  }
   }
   
-  handleToggle(company){
-   console.log('we are editing this section ', company); 
-    this.setState({toggle: this.state.toggle === company ? null : company ,
-                  text: this.state.text == 'Edit' ? 'Save' : 'Edit'});
-}
-
+//handleEdit is only receiving company here
+  
   createList(company){
-    return (<section className={company["Company Code"]} key={company["Company Code"]}><h3 contentEditable={this.state.toggle === company["Company Code"]} >{company["Company Name"]}</h3><br /><ul>
-            <li contentEditable={this.state.toggle === company["Company Code"]} >Status: {company["Status"]}</li><br />
-            <li contentEditable={this.state.toggle === company["Company Code"]} >Company Information: {company["Company Information"]}</li><br />
-            <li contentEditable={this.state.toggle === company["Company Code"]} >Key Contacts: {company["Key Contacts"]}</li><br />
-            <li contentEditable={this.state.toggle === company["Company Code"]} >Financial Performance: {company["Financial Performance"]}</li>
-            </ul>
-            <button key={'edit'+company["Company Code"]} onClick={(e)=>  this.handleToggle(company["Company Code"])}>{this.state.text}</button>
-            <button key={'delete'+company["Company Code"]} onClick={() => this.props.deleteItem(company)}>Delete</button>
-            </section>
-            )
+    return <Company deleteItem={() => this.props.deleteItem(company)} handleEdit={(company, newData) => this.props.handleEdit(company, newData)} key={company["Company Code"]} status={company["Status"]} name={company["Company Name"]} code={company["Company Code"]} info={company["Company Information"]} contacts={company["Key Contacts"]} performance={company["Financial Performance"]}/>
   }
+  //map over companyEntries
+  //each entry will be passed into Company component
   
   render(){
-    let companyEntries = this.props.entries;
-    let listItems = companyEntries.map((company) => this.createList(company)); 
+    let companyList = this.props.companyList;
+    let listItems = companyList.map((company) => this.createList(company)); 
     return(<div className="theList">
            {listItems}
            </div>

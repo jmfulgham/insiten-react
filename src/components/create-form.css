@@ -4,8 +4,8 @@ button {
 }
 
 .create-new-company {
-  border: 1px solid #C7E4FF;
-  background-color: #44aaf83c;
+/*   border: 1px solid #C7E4FF; */
+  
   border-radius: 10px;
 }
 
@@ -34,6 +34,5 @@ select {
   margin: 5px;
 }
 
-.editable{
-  background-color: silver;
-}
+
+

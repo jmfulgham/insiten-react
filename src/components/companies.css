@@ -1,0 +1,27 @@
+contenteditable {
+  background: #EAEAEA;
+}
+.theList{
+  background-color: white;
+  margin: 10px;
+}
+
+.editable{
+  background: #EAEAEA;
+}
+
+li{
+  
+  list-style: none;
+}
+
+
+section{
+  background: linear-gradient(to right, white, #44aaf87c);
+  border: 1px solid silver;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  -webkit-box-shadow: 0 8px 6px -6px rgb(181, 179, 179);
+  -moz-box-shadow: 0 8px 6px -6px rgb(181, 179, 179);
+  box-shadow: 0 8px 6px -6px rgb(181, 179, 179);}
