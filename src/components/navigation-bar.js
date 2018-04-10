@@ -15,7 +15,7 @@ export default function NavigationBar(props) {
     return (
         <div className="row">
             <img src={props.img} alt="Insiten React App" className="logo" />
-            <nav className="col-12">
+            <nav role="navigation" className="col-12">
                 <ul>
                     {links}
                 </ul>

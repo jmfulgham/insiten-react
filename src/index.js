@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import NavigationBar from './components/navigation-bar';
+import NavigationBar from './components/navigation-bar';
 import CreateForm from './components/create-form';
 import './index.css';
 import './responsive.css';
@@ -26,8 +26,10 @@ const img= 'http://www.insiten.com/wp-content/uploads/2017/12/logo_243_50.png'
 
 
 ReactDOM.render(
-  // <NavigationBar title="Insiten" links={links} img={img}/>,
-  <CreateForm />,
+  <div>
+  <NavigationBar title="Insiten" links={links} img={img}/>,
+  <CreateForm />
+  </div>,
   document.getElementById('root')
 );
 registerServiceWorker();
