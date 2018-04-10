@@ -82,7 +82,11 @@ export default class CreateForm extends React.Component {
     handleEdit(companyProps, newState){
   const oldName = companyProps.name;
       
-      const oldCode = companyProps.code
+      const oldCode = companyProps.code;
+      const oldStatus= companyProps.status;
+      const oldContacts= companyProps.contacts;
+      const oldPerformance= companyProps.performance;
+      const oldInfo= companyProps.info;
   let newName = newState.companyName;
       let newCode= newState.code;
     let newStatus = newState.status;
@@ -93,13 +97,12 @@ export default class CreateForm extends React.Component {
   this.setState({
     companyList: this.state.companyList.map(item => 
       item["Company Code"] === oldCode ? {
-        ["Company Name"]: newName,
-      ["Company Code"]: newCode,
-      ["Company Name"]: newName,
-      ["Status"]: newStatus,
-      ["Company Information"] : newInfo,
-      ["Key Contacts"]: newContacts,
-      ["Financial Performance"] : newPerformance
+        ["Company Name"]: newName || oldName,
+      ["Company Code"]: newCode || oldCode,
+      ["Status"]: newStatus || oldStatus,
+      ["Company Information"] : newInfo|| oldInfo,
+      ["Key Contacts"]: newContacts || oldContacts,
+      ["Financial Performance"] : newPerformance || oldPerformance
       
       } : item
     )
