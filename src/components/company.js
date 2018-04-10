@@ -57,6 +57,7 @@ export default class Company extends React.Component{
   
   handleChange(e, name){
     e.preventDefault();
+    
     console.log(e.target.value, e.target.name)
     this.setState({ [e.target.name] : e.target.value})
   }
