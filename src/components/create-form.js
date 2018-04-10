@@ -79,23 +79,20 @@ export default class CreateForm extends React.Component {
   });
   }
   
-
-  
     handleEdit(companyProps, newState){
   const oldName = companyProps.name;
-      let oldCode = companyProps.code
+      
+      const oldCode = companyProps.code
   let newName = newState.companyName;
       let newCode= newState.code;
     let newStatus = newState.status;
     let newContacts= newState.contacts;
     let newPerformance = newState.performance;
     let newInfo= newState.info;
-
-
+    
   this.setState({
     companyList: this.state.companyList.map(item => 
       item["Company Code"] === oldCode ? {
-        
         ["Company Name"]: newName,
       ["Company Code"]: newCode,
       ["Company Name"]: newName,
@@ -105,41 +102,10 @@ export default class CreateForm extends React.Component {
       ["Financial Performance"] : newPerformance
       
       } : item
-      
     )
   })
     
 }
-    
-    // this.state.companyList.map((item) =>{
-    //   if(oldCode === item["Company Code"]){
-    //      console.log("We found a match!", oldCode, item["Company Code"], "but now we must replace", item["Company Name"], "with ", newName);
-    //     this.updateState(newName)
-      // this.setState({
-      //   companyList: {"Company Name": newName}
-      // })
-      
-  
-                        // let newName= newState.companyName;
-    // let newCode= newState.code;
-    // let newStatus = newState.status;
-    // let newContacts= newState.contacts;
-    // let newPerformance = newState.performance;
-    // let newInfo= newState.info;
-    // console.log("old code ", companyProps.name);
-    // let updatedState= {"Company Code": newCode,
-    //   "Company Name": newName,
-    //   "Status": newStatus,
-    //   "Company Information" : newInfo,
-    //   "Key Contacts": newContacts,
-    //   "Financial Performance": newPerformance
-    // }
-    
-   
-                       
-
-  
-
   
   
   render() {

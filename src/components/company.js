@@ -55,9 +55,11 @@ export default class Company extends React.Component{
             )
   }
   
+  
+  
+  
   handleChange(e, name){
     e.preventDefault();
-    
     console.log(e.target.value, e.target.name)
     this.setState({ [e.target.name] : e.target.value})
   }
@@ -66,7 +68,8 @@ export default class Company extends React.Component{
 handleNewItem(company, newData){
   newData=this.state;
   company = this.props;
-  console.log("what is the child sending?" , company, newData);
+  console.log("what is the new state?", newData);
+  console.log("old state!!!!!", company);
   // console.log("New State ", this.state);
   
   this.props.handleEdit( company, newData );
