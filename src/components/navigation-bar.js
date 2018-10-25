@@ -15,7 +15,7 @@ export default function NavigationBar(props) {
 
     return (
         <div>
-        <AppBar position='static' style={[{flex: 'grow', color: '#FFFFFF'}]} color="primary">
+        <AppBar position='static' style={{flex: 'grow'}} color="primary">
         <Toolbar>
             <img src={props.img} alt="Insiten React App" className="logo" />
             <nav role="navigation" className="col-12">
