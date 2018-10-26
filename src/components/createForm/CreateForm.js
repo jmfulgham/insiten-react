@@ -1,5 +1,5 @@
 import React from "react";
-// import '../responsive.css';
+// import "../../responsive.css";
 import Companies from "../companies";
 import "./CreateForm.css";
 import TextField from "@material-ui/core/TextField";
@@ -16,6 +16,17 @@ const status = [
   { value: "researching", label: "Researching" },
   { value: "denied", label: "Denied" }
 ];
+
+const styles = {
+  container: {
+    display: "flex",
+    flexWrap: "wrap"
+  },
+  textField: {
+    margin: 10,
+    width: 200
+  }
+};
 
 export default class CreateForm extends React.Component {
   constructor(props) {
@@ -98,17 +109,22 @@ export default class CreateForm extends React.Component {
   }
 
   render() {
+    const { classes } = this.props;
     return (
       <div className="create-new-company">
         <div className="row">
           <div>
-            <Card>
+            <Card style={styles.container}>
               <CardContent>
-                <Typography variant="h3">Create a New Investment</Typography>
+                <Typography variant="h3" margin="20">
+                  Create a New Investment
+                </Typography>
                 <form onSubmit={this.addItem}>
                   <legend>
-                    <h3>Add New Target</h3>
-                    <p>Input target information in the form below. </p>
+                    <Typography variant="h5"> Add New Target</Typography>
+                    <Typography variant="caption">
+                      Input target information in the form below.
+                    </Typography>
                   </legend>
 
                   <TextField
@@ -116,6 +132,7 @@ export default class CreateForm extends React.Component {
                     label="Company Code"
                     placeholder="ABC123"
                     margin="normal"
+                    style={styles.textField}
                   />
 
                   <TextField
@@ -123,6 +140,7 @@ export default class CreateForm extends React.Component {
                     label="Company Name"
                     placeholder="ABC Real Estate"
                     margin="normal"
+                    style={styles.textField}
                   />
 
                   <TextField
@@ -134,6 +152,7 @@ export default class CreateForm extends React.Component {
                       native: true
                     }}
                     helperText="Please select the company's status"
+                    style={styles.textField}
                     margin="normal"
                     onChange={this.handleChange("status")}
                   >
@@ -149,6 +168,7 @@ export default class CreateForm extends React.Component {
                     label="Company Synopsis"
                     multiline
                     rowsMax="6"
+                    style={styles.textField}
                     value={this.state.multiline}
                     // onChange={this.handleChange('multiline')}
                     margin="normal"
@@ -159,6 +179,7 @@ export default class CreateForm extends React.Component {
                     multiline
                     rowsMax="6"
                     value={this.state.multiline}
+                    style={styles.textField}
                     // onChange={this.handleChange('multiline')}
                     margin="normal"
                   />
