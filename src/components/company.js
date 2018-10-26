@@ -68,10 +68,6 @@ export default class Company extends React.Component{
 handleNewItem(company, newData){
   newData=this.state;
   company = this.props;
-  console.log("what is the new state?", newData);
-  console.log("old state!!!!!", company);
-  // console.log("New State ", this.state);
-  
   this.props.handleEdit( company, newData );
   
 }

@@ -1,3 +1,6 @@
 # Insiten React App
 
-After creating the initial app using JavaScript and jQuery, I am updating it with the React.js framework.
+After creating the initial app using JavaScript and jQuery, I have updated it with the React.js framework. 
+<ul>
+  <li>Live link: https://insiten-react.glitch.me/</li>
+  </ul>

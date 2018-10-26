@@ -1,18 +1,15 @@
 a {
   text-decoration: none;
-  color: grey;
+  color: rgb(86, 193, 243);
 }
 
 a:hover,
 a:active {
-  color: #44a9f8;
+  color: rgb(100, 165, 235);
   cursor: pointer;
 }
 
-/* a:visited {
-  color: #44a9f8;
-}
- */
+
 img {
   margin: 5px;
 }
@@ -28,10 +25,6 @@ nav {
   text-align: right;
   
 }
-
-/* .nav-logo {
-  margin: 20px;
-} */
 
 li {
   list-style: none;
