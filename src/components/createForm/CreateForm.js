@@ -169,7 +169,6 @@ export default class CreateForm extends React.Component {
                     rowsMax="6"
                     style={styles.textField}
                     value={this.state.multiline}
-                    // onChange={this.handleChange('multiline')}
                     margin="normal"
                   />
                   <TextField
@@ -179,7 +178,6 @@ export default class CreateForm extends React.Component {
                     rowsMax="6"
                     value={this.state.multiline}
                     style={styles.textField}
-                    // onChange={this.handleChange('multiline')}
                     margin="normal"
                   />
                   <Button className="submit">Submit New Target</Button>
