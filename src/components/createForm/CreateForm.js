@@ -1,7 +1,5 @@
 import React from "react";
-// import "../../responsive.css";
 import Companies from "../companies";
-import "./CreateForm.css";
 import TextField from "@material-ui/core/TextField";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
@@ -10,8 +8,6 @@ import MenuItem from "@material-ui/core/MenuItem";
 import classNames from "classnames";
 import { withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-//TODO
-//Input button change, then move all handle input code into a service.
 
 const status = [
   { value: "pending", label: "Pending" },
