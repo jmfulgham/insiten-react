@@ -9,6 +9,9 @@ import Typography from "@material-ui/core/Typography";
 import MenuItem from "@material-ui/core/MenuItem";
 import classNames from "classnames";
 import { withStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+//TODO
+//Input button change, then move all handle input code into a service.
 
 const status = [
   { value: "pending", label: "Pending" },
@@ -183,12 +186,7 @@ export default class CreateForm extends React.Component {
                     // onChange={this.handleChange('multiline')}
                     margin="normal"
                   />
-
-                  <input
-                    type="submit"
-                    className="submit"
-                    value="Add New Target"
-                  />
+                  <Button className="submit">Submit New Target</Button>
                 </form>
               </CardContent>
             </Card>
