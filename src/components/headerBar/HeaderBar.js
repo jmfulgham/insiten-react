@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import './headerBar.css';
 import Toolbar from '@material-ui/core/Toolbar';
-import links from "../../links.json";
 
 export default class HeaderBar extends Component {
     constructor(props){
