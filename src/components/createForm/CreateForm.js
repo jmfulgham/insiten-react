@@ -30,85 +30,42 @@ const styles = {
 export default class CreateForm extends React.Component {
   constructor(props) {
     super(props);
-    this.addItem = this.addItem.bind(this);
-    this.state = { companyList: [], status };
+    this.state = {
+      companyList: [
+        {
+          companyCode: "",
+          companyName: "",
+          status: [status],
+          companyInfo: "",
+          keyContacts: "",
+          financialPerf: ""
+        }
+      ]
+    };
   }
+
+  addItem = e => {
+    console.log(e.target.value);
+  };
 
   handleChange = name => event => {
     this.setState({
-      [name]: event.target.value
+      companyList: [...this.state.companyList, { name: event.target.value }]
     });
+    console.log(this.state);
   };
 
-  addItem(e) {
-    e.preventDefault();
-
-    let newCompany = {
-      "Company Code": this._codeInput.value,
-      "Company Name": this._nameInput.value,
-      Status: this._status.value,
-      "Company Information": this._companyInfo.value,
-      "Key Contacts": this._contacts.value,
-      "Financial Performance": this._financialPerformance.value
-    };
-
-    this.setState(prevState => {
-      return {
-        companyList: prevState.companyList.concat(newCompany)
-      };
-    });
-
-    this._codeInput.value = "";
-    this._nameInput.value = "";
-    this._companyInfo.value = "";
-    this._contacts.value = "";
-    this._financialPerformance.value = "";
-  }
-
-  deleteItem(company) {
-    let filteredList = this.state.companyList.filter(function(item) {
-      return company["Company Code"] !== item["Company Code"];
-    });
-
-    this.setState({
-      companyList: filteredList
-    });
-  }
-
-  handleEdit(companyProps, newState) {
-    const oldName = companyProps.name;
-
-    const oldCode = companyProps.code;
-    const oldStatus = companyProps.status;
-    const oldContacts = companyProps.contacts;
-    const oldPerformance = companyProps.performance;
-    const oldInfo = companyProps.info;
-    let newName = newState.companyName;
-    let newCode = newState.code;
-    let newStatus = newState.status;
-    let newContacts = newState.contacts;
-    let newPerformance = newState.performance;
-    let newInfo = newState.info;
-
-    this.setState({
-      companyList: this.state.companyList.map(
-        item =>
-          item["Company Code"] === oldCode
-            ? {
-                ["Company Name"]: newName || oldName,
-                ["Company Code"]: newCode || oldCode,
-                ["Status"]: newStatus || oldStatus,
-                ["Company Information"]: newInfo || oldInfo,
-                ["Key Contacts"]: newContacts || oldContacts,
-                ["Financial Performance"]: newPerformance || oldPerformance
-              }
-            : item
-      )
-    });
-  }
-
   render() {
-    const { classes } = this.props;
+    const {
+      companyList: {
+        companyCode,
+        companyName,
+        status,
+        companyInfo,
+        keyContacts,
+        financialPerf
+      }
+    } = this.state;
     return (
       <div className="create-new-company">
         <div className="row">
@@ -129,9 +86,14 @@ export default class CreateForm extends React.Component {
                   <TextField
                     id="standard-with-placeholder"
                     label="Company Code"
+                    name="companyCode"
                     placeholder="ABC123"
                     margin="normal"
                     style={styles.textField}
+                    value={companyCode}
+                    onChange={e => {
+                      this.handleChange("companyCode");
+                    }}
                   />
 
                   <TextField
@@ -140,6 +102,9 @@ export default class CreateForm extends React.Component {
                     placeholder="ABC Real Estate"
                     margin="normal"
                     style={styles.textField}
+                    onChange={e => {
+                      this.setState({ "Company Name": e.target.value });
+                    }}
                   />
 
                   <TextField
@@ -170,6 +135,9 @@ export default class CreateForm extends React.Component {
                     style={styles.textField}
                     value={this.state.multiline}
                     margin="normal"
+                    onChange={e => {
+                      this.setState({ "Company Synopsis": e.target.value });
+                    }}
                   />
                   <TextField
                     id="standard-multiline-flexible"
@@ -179,8 +147,14 @@ export default class CreateForm extends React.Component {
                     value={this.state.multiline}
                     style={styles.textField}
                     margin="normal"
+                    onChange={e => {
+                      this.setState({ "Key Contacts": e.target.value });
+                      console.log(this.state);
+                    }}
                   />
-                  <Button className="submit">Submit New Target</Button>
+                  <Button className="submit" onClick={e => this.addItem(e)}>
+                    Submit New Target
+                  </Button>
                 </form>
               </CardContent>
             </Card>
