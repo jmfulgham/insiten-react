@@ -1,0 +1,31 @@
+{
+      "companyList":
+      [ {
+        "Company Code": "ABC",
+        "Company Name": "ABC REIT",
+        "Status": "Researching",
+        "Company Information": "ABC REIT specializes in commercial real estate properties. Their specialties include property and land sales, leasing, and tax liens.",
+        "Key Contacts": "Alan Smith, Phone: 404-123-4567, Email: asmith@abcreit.com",
+        "Financial Performance": "2017YE Portfolio Holdings: $52.7mm, 2017YE Revenue: $82.3mm, 2017YE Expenses: $13.1mm, Percentage of liquid assets: 17.85%"
+    },
+
+    {
+        "Company Code": "OFT",
+        "Company Name": "One Financial Trust",
+        "Status": "Approved",
+        "Company Information": "One Financial Trust is a small credit union that services the local community.",
+        "Key Contacts": "Natalie Lane, Phone: 404-789-1011, Email: n.lane@oft.org",
+        "Financial Performance": "2017YE Portfolio Holdings: $32.7mm, 2017YE Revenue: $42.13mm, 2017YE Expenses: $3.1mm, Percentage of liquid assets: 4.85%"
+    },
+
+    {
+        "Company Code": "SRH",
+        "Company Name": "Sunshine Retirement Homes, LLC",
+        "Status": "Denied",
+        "Company Information": "Sunshine Retirement Homes is a popular retirement home in South Florida with several locations in the Palm Beach and Dade County. ",
+        "Key Contacts": "Alan Smith, Phone: 404-123-4567, Email: asmith@abcreit.com",
+        "Financial Performance": "2017YE Portfolio Holdings: $12.7mm, 2017YE Revenue: $7.3mm, 2017YE Expenses: $3.1mm, Percentage of liquid assets: 1.5%"
+    }
+]
+    }
+  

@@ -9,6 +9,12 @@ import classNames from "classnames";
 import { withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 
+import InputLabel from "@material-ui/core/InputLabel";
+import FormHelperText from "@material-ui/core/FormHelperText";
+import FormControl from "@material-ui/core/FormControl";
+import Select from "@material-ui/core/Select";
+
+
 const status = [
   { value: "pending", label: "Pending" },
   { value: "approved", label: "Approved" },
@@ -68,64 +74,61 @@ export default class CreateForm extends React.Component {
     } = this.state;
     return (
       <div className="create-new-company">
-        <div className="row">
           <div>
             <Card style={styles.container}>
               <CardContent>
-                <Typography variant="h3" margin="20">
+                <Typography variant="h3" margin="30">
                   Create a New Investment
                 </Typography>
+                <div>
                 <form onSubmit={this.addItem}>
-                  <legend>
-                    <Typography variant="h5"> Add New Target</Typography>
-                    <Typography variant="caption">
-                      Input target information in the form below.
-                    </Typography>
-                  </legend>
+                  <FormControl>
+                      <Typography variant="h5"> Add New Target</Typography>
+                      <Typography variant="subheading">
+                        Input target information in the form below.
+                      </Typography>
+                    <TextField
+                      id="standard-with-placeholder"
+                      label="Company Code"
+                      name="companyCode"
+                      placeholder="ABC123"
+                      margin="normal"
+                      style={styles.textField}
+                      value={companyCode}
+                      onChange={e => {
+                        this.handleChange("companyCode");
+                      }}
+                    />
 
-                  <TextField
-                    id="standard-with-placeholder"
-                    label="Company Code"
-                    name="companyCode"
-                    placeholder="ABC123"
-                    margin="normal"
-                    style={styles.textField}
-                    value={companyCode}
-                    onChange={e => {
-                      this.handleChange("companyCode");
-                    }}
-                  />
+                    <TextField
+                      id="standard-with-placeholder"
+                      label="Company Name"
+                      placeholder="ABC Real Estate"
+                      margin="normal"
+                      style={styles.textField}
+                      onChange={e => {
+                        this.setState({ "Company Name": e.target.value });
+                      }}
+                    />
 
-                  <TextField
-                    id="standard-with-placeholder"
-                    label="Company Name"
-                    placeholder="ABC Real Estate"
-                    margin="normal"
-                    style={styles.textField}
-                    onChange={e => {
-                      this.setState({ "Company Name": e.target.value });
-                    }}
-                  />
-
-                  <TextField
-                    id="standard-select-currency-native"
-                    select
-                    label="Status"
-                    value={this.state.status}
-                    SelectProps={{
-                      native: true
-                    }}
-                    helperText="Please select the company's status"
-                    style={styles.textField}
-                    margin="normal"
-                    onChange={this.handleChange("status")}
-                  >
-                    {status.map(option => (
-                      <option key={option.value} value={option.value}>
-                        {option.label}
-                      </option>
-                    ))}
-                  </TextField>
+                    <FormHelperText style={styles.textField}>
+                     Status
+                    </FormHelperText>
+                    <Select
+                      value={this.state.status}
+                      onChange={this.handleChange}
+                      inputProps={{ value: "pending", label: "Pending" }}
+                      style={styles.textField}
+                      helperText = "Status"
+                    >
+                      <MenuItem value="pending">Pending</MenuItem>
+                      <MenuItem value="approved">Approved</MenuItem>
+                      <MenuItem value="researching">Researching</MenuItem>
+                      <MenuItem value="denied">Denied</MenuItem>
+                    </Select>
+                    <FormHelperText style={styles.textField}>
+                      Please select the company review status
+                    </FormHelperText>
 
                   <TextField
                     id="standard-multiline-flexible"
@@ -155,10 +158,11 @@ export default class CreateForm extends React.Component {
                   <Button className="submit" onClick={e => this.addItem(e)}>
                     Submit New Target
                   </Button>
+                  </FormControl>
                 </form>
+                </div>
               </CardContent>
             </Card>
-          </div>
         </div>
         <div>
           <Companies
