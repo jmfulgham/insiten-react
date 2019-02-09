@@ -5,197 +5,167 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import MenuItem from "@material-ui/core/MenuItem";
-import classNames from "classnames";
-import { withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 
+import FormHelperText from "@material-ui/core/FormHelperText";
+import FormControl from "@material-ui/core/FormControl";
+import Select from "@material-ui/core/Select";
+
+
 const status = [
-  { value: "pending", label: "Pending" },
-  { value: "approved", label: "Approved" },
-  { value: "researching", label: "Researching" },
-  { value: "denied", label: "Denied" }
+    {value: "pending", label: "Pending"},
+    {value: "approved", label: "Approved"},
+    {value: "researching", label: "Researching"},
+    {value: "denied", label: "Denied"}
 ];
 
 const styles = {
-  container: {
-    display: "flex",
-    flexWrap: "wrap"
-  },
-  textField: {
-    margin: 10,
-    width: 200
-  }
+    container: {
+        display: "flex",
+        flexWrap: "wrap"
+    },
+    textField: {
+        margin: 10,
+        width: 200
+    },
+    button: {
+       width: '12rem'
+    }
 };
 
 export default class CreateForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.addItem = this.addItem.bind(this);
-    this.state = { companyList: [], status };
-  }
+    constructor(props) {
+        super(props);
+        this.state = {
+            companyList: [
+                {
+                    companyCode: "",
+                    companyName: "",
+                    status: [status],
+                    companyInfo: "",
+                    keyContacts: "",
+                    financialPerf: ""
+                }
+            ]
+        };
+    }
 
-  handleChange = name => event => {
-    this.setState({
-      [name]: event.target.value
-    });
-  };
-
-  addItem(e) {
-    e.preventDefault();
-
-    let newCompany = {
-      "Company Code": this._codeInput.value,
-      "Company Name": this._nameInput.value,
-      Status: this._status.value,
-      "Company Information": this._companyInfo.value,
-      "Key Contacts": this._contacts.value,
-      "Financial Performance": this._financialPerformance.value
+    addItem = e => {
+        console.log(e)
     };
 
-    this.setState(prevState => {
-      return {
-        companyList: prevState.companyList.concat(newCompany)
-      };
-    });
+    handleChange = name => event => {
+        this.setState({
+            companyList: [...this.state.companyList, {name: event.target.value}]
+        });
+        console.log(this.state);
+    };
 
-    this._codeInput.value = "";
-    this._nameInput.value = "";
-    this._companyInfo.value = "";
-    this._contacts.value = "";
-    this._financialPerformance.value = "";
-  }
+    render() {
+        return (
+            <div className="create-new-company">
+                <div>
+                    <Card style={styles.container}>
+                        <CardContent>
+                            <Typography variant="h3" margin="30">
+                                Create a New Investment
+                            </Typography>
+                            <div>
+                                <form onSubmit={this.addItem}>
+                                    <FormControl>
+                                        <Typography variant="h5"> Add New Target</Typography>
+                                        <Typography variant="subheading">
+                                            Input target information in the form below.
+                                        </Typography>
+                                        <TextField
+                                            id="standard-with-placeholder"
+                                            label="Company Code"
+                                            name="companyCode"
+                                            placeholder="ABC123"
+                                            margin="normal"
+                                            style={styles.textField}
+                                            value={this.state.companyCode}
+                                            onChange={e => {
+                                                this.handleChange("companyCode");
+                                            }}
+                                        />
 
-  deleteItem(company) {
-    let filteredList = this.state.companyList.filter(function(item) {
-      return company["Company Code"] !== item["Company Code"];
-    });
+                                        <TextField
+                                            id="standard-with-placeholder"
+                                            label="Company Name"
+                                            placeholder="ABC Real Estate"
+                                            margin="normal"
+                                            style={styles.textField}
+                                            onChange={e => {
+                                                this.setState({"Company Name": e.target.value});
+                                            }}
+                                        />
 
-    this.setState({
-      companyList: filteredList
-    });
-  }
+                                        <FormHelperText style={styles.textField}>
+                                            Status
+                                        </FormHelperText>
+                                        <Select
+                                            value={this.state.status}
+                                            onChange={this.handleChange}
+                                            inputProps={{value: "pending", label: "Pending"}}
+                                            style={styles.textField}
+                                            helperText="Status"
+                                        >
+                                            <MenuItem value="pending">Pending</MenuItem>
+                                            <MenuItem value="approved">Approved</MenuItem>
+                                            <MenuItem value="researching">Researching</MenuItem>
+                                            <MenuItem value="denied">Denied</MenuItem>
+                                        </Select>
+                                        <FormHelperText style={styles.textField}>
+                                            Please select the company review status
+                                        </FormHelperText>
 
-  handleEdit(companyProps, newState) {
-    const oldName = companyProps.name;
-
-    const oldCode = companyProps.code;
-    const oldStatus = companyProps.status;
-    const oldContacts = companyProps.contacts;
-    const oldPerformance = companyProps.performance;
-    const oldInfo = companyProps.info;
-    let newName = newState.companyName;
-    let newCode = newState.code;
-    let newStatus = newState.status;
-    let newContacts = newState.contacts;
-    let newPerformance = newState.performance;
-    let newInfo = newState.info;
-
-    this.setState({
-      companyList: this.state.companyList.map(
-        item =>
-          item["Company Code"] === oldCode
-            ? {
-                ["Company Name"]: newName || oldName,
-                ["Company Code"]: newCode || oldCode,
-                ["Status"]: newStatus || oldStatus,
-                ["Company Information"]: newInfo || oldInfo,
-                ["Key Contacts"]: newContacts || oldContacts,
-                ["Financial Performance"]: newPerformance || oldPerformance
-              }
-            : item
-      )
-    });
-  }
-
-  render() {
-    const { classes } = this.props;
-    return (
-      <div className="create-new-company">
-        <div className="row">
-          <div>
-            <Card style={styles.container}>
-              <CardContent>
-                <Typography variant="h3" margin="20">
-                  Create a New Investment
-                </Typography>
-                <form onSubmit={this.addItem}>
-                  <legend>
-                    <Typography variant="h5"> Add New Target</Typography>
-                    <Typography variant="caption">
-                      Input target information in the form below.
-                    </Typography>
-                  </legend>
-
-                  <TextField
-                    id="standard-with-placeholder"
-                    label="Company Code"
-                    placeholder="ABC123"
-                    margin="normal"
-                    style={styles.textField}
-                  />
-
-                  <TextField
-                    id="standard-with-placeholder"
-                    label="Company Name"
-                    placeholder="ABC Real Estate"
-                    margin="normal"
-                    style={styles.textField}
-                  />
-
-                  <TextField
-                    id="standard-select-currency-native"
-                    select
-                    label="Status"
-                    value={this.state.status}
-                    SelectProps={{
-                      native: true
-                    }}
-                    helperText="Please select the company's status"
-                    style={styles.textField}
-                    margin="normal"
-                    onChange={this.handleChange("status")}
-                  >
-                    {status.map(option => (
-                      <option key={option.value} value={option.value}>
-                        {option.label}
-                      </option>
-                    ))}
-                  </TextField>
-
-                  <TextField
-                    id="standard-multiline-flexible"
-                    label="Company Synopsis"
-                    multiline
-                    rowsMax="6"
-                    style={styles.textField}
-                    value={this.state.multiline}
-                    margin="normal"
-                  />
-                  <TextField
-                    id="standard-multiline-flexible"
-                    label="Key Contacts"
-                    multiline
-                    rowsMax="6"
-                    value={this.state.multiline}
-                    style={styles.textField}
-                    margin="normal"
-                  />
-                  <Button className="submit">Submit New Target</Button>
-                </form>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-        <div>
-          <Companies
-            companyList={this.state.companyList}
-            deleteItem={company => this.deleteItem(company)}
-            handleEdit={(currentData, newData) =>
-              this.handleEdit(currentData, newData)
-            }
-          />
-        </div>
-      </div>
-    );
-  }
+                                        <TextField
+                                            id="standard-multiline-flexible"
+                                            label="Company Synopsis"
+                                            multiline
+                                            rowsMax="6"
+                                            style={styles.textField}
+                                            value={this.state.multiline}
+                                            margin="normal"
+                                            onChange={e => {
+                                                this.setState({"Company Synopsis": e.target.value});
+                                            }}
+                                        />
+                                        <TextField
+                                            id="standard-multiline-flexible"
+                                            label="Key Contacts"
+                                            multiline
+                                            rowsMax="6"
+                                            value={this.state.multiline}
+                                            style={styles.textField}
+                                            margin="normal"
+                                            onChange={e => {
+                                                this.setState({"Key Contacts": e.target.value});
+                                                console.log(this.state);
+                                            }}
+                                        />
+                                        <Button className="submit"
+                                                onClick={e => this.addItem(e)}
+                                                style={styles.button}>
+                                            Submit New Target
+                                        </Button>
+                                    </FormControl>
+                                </form>
+                            </div>
+                        </CardContent>
+                    </Card>
+                </div>
+                <div>
+                    <Companies
+                        companyList={this.state.companyList}
+                        deleteItem={company => this.deleteItem(company)}
+                        handleEdit={(currentData, newData) =>
+                            this.handleEdit(currentData, newData)
+                        }
+                    />
+                </div>
+            </div>
+        );
+    }
 }
