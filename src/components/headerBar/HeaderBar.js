@@ -11,7 +11,7 @@ export default class HeaderBar extends Component {
     render(){
     return (
         <div>
-        <AppBar position='static' style={{flexGrow: 1}} color="default">
+        <AppBar position='static' style={{flexGrow: 1}} color="none" elevation={0}>
         <Toolbar>
             <img src={this.props.img} alt="Insiten React App" className="logo" />
             </Toolbar>
