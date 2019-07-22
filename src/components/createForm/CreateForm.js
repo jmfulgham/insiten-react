@@ -68,7 +68,7 @@ export default class CreateForm extends React.Component {
                                         Input target information in the form below.
                                     </Typography>
                                     <TextField
-                                        id="standard-with-placeholder"
+                                        id="companyCode"
                                         label="Company Code"
                                         name="Company Code"
                                         placeholder="ABC123"
@@ -78,7 +78,7 @@ export default class CreateForm extends React.Component {
                                     />
 
                                     <TextField
-                                        id="standard-with-placeholder"
+                                        id="companyName"
                                         label="Company Name"
                                         name="Company Name"
                                         placeholder="ABC Real Estate"
