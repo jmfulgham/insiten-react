@@ -114,7 +114,7 @@ export default class CreateForm extends React.Component {
                                     </FormHelperText>
 
                                     <TextField
-                                        id="standard-multiline-flexible"
+                                        id="companySynopsis"
                                         label="Company Synopsis"
                                         name="Company Synopsis"
                                         multiline
@@ -125,7 +125,7 @@ export default class CreateForm extends React.Component {
                                         onBlur={this.handleChange}
                                     />
                                     <TextField
-                                        id="standard-multiline-flexible"
+                                        id="keyContacts"
                                         label="Key Contacts"
                                         name="Key Contacts"
                                         multiline
