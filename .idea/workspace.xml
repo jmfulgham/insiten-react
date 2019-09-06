@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5b4925c-93f5-41ef-9fd0-9bd5c2ae31da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/companies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/companies.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/createForm/CreateForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/createForm/CreateForm.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -15,13 +14,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.36648583">
+    <splitter split-orientation="horizontal" split-proportion="0.37010247">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/companies.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="284">
+                <state relative-caret-position="285">
                   <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
@@ -37,8 +36,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/createForm/CreateForm.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+                <state relative-caret-position="309">
+                  <caret line="90" column="119" selection-start-line="90" selection-start-column="119" selection-end-line="90" selection-end-column="128" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -279,7 +278,7 @@
       <workItem from="1566942992942" duration="3000" />
       <workItem from="1567440917188" duration="13000" />
       <workItem from="1567440952015" duration="2680000" />
-      <workItem from="1567542102187" duration="5067000" />
+      <workItem from="1567542102187" duration="6154000" />
     </task>
     <servers />
   </component>
@@ -316,7 +315,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39026000" />
+    <option name="totallyTimeSpent" value="40113000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,7 +336,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32905483" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37551022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37551022" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35306123" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -345,7 +344,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.23163265" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23163265" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -379,7 +378,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/createForm/CreateForm.js</url>
-          <line>144</line>
+          <line>143</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -504,7 +503,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/companies.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
+        <state relative-caret-position="285">
           <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -514,8 +513,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/createForm/CreateForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+        <state relative-caret-position="309">
+          <caret line="90" column="119" selection-start-line="90" selection-start-column="119" selection-end-line="90" selection-end-column="128" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

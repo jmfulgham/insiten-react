@@ -44,7 +44,7 @@ export default class CreateForm extends React.Component {
     };
 
     handleChange = name => event => {
-        this.setState({...this.state.companyList, companyList: {[name]: event.target.value}});
+        this.setState( { companyList: {...this.state.companyList, [name]: event.target.value} });
     };
 
     render() {
@@ -87,14 +87,13 @@ export default class CreateForm extends React.Component {
                                         </FormHelperText>
                                         <Select
                                             onChange={this.handleChange("Status")}
-                                            inputProps={{value: "pending", label: "Pending"}}
                                             style={styles.textField}
                                             helpertext="Status"
                                         >
-                                            <MenuItem value="pending">Pending</MenuItem>
-                                            <MenuItem value="approved">Approved</MenuItem>
-                                            <MenuItem value="researching">Researching</MenuItem>
-                                            <MenuItem value="denied">Denied</MenuItem>
+                                            <MenuItem value="Pending">Pending</MenuItem>
+                                            <MenuItem value="Approved">Approved</MenuItem>
+                                            <MenuItem value="Researching">Researching</MenuItem>
+                                            <MenuItem value="Denied">Denied</MenuItem>
                                         </Select>
                                         <FormHelperText style={styles.textField}>
                                             Please select the company review status
