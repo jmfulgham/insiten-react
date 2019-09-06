@@ -15,13 +15,18 @@ export default class Companies extends React.Component{
 
   
   createList(company){
-    return <Company deleteItem={() => this.props.deleteItem(company)} handleEdit={(company, newData) => this.props.handleEdit(company, newData)} key={company["Company Code"]} status={company["Status"]} name={company["Company Name"]} code={company["Company Code"]} info={company["Company Information"]} contacts={company["Key Contacts"]} performance={company["Financial Performance"]}/>
+    return <Company deleteItem={() => this.props.deleteItem(company)}
+                    handleEdit={(company, newData) => this.props.handleEdit(company, newData)}
+                    key={company["Company Code"]} status={company["Status"]}
+                    name={company["Company Name"]} code={company["Company Code"]}
+                    info={company["Company Information"]} contacts={company["Key Contacts"]}
+                    performance={company["Financial Performance"]}/>
   }
  
   
   render(){
-    let companyList = this.props.companyList;
-    let listItems = companyList.map((company) => this.createList(company)); 
+    let companyCard = this.props.companyCard;
+    let listItems = (companyCard) => this.createList(companyCard);
     return(<div className="theList">
            {listItems}
            </div>

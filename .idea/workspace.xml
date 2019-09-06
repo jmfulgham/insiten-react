@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b5b4925c-93f5-41ef-9fd0-9bd5c2ae31da" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/companies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/companies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/createForm/CreateForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/createForm/CreateForm.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.36648583">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/companies.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="284">
+                  <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/createForm/CreateForm.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="228">
+                  <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>helperTe</find>
+      <find>status</find>
+      <find>cons</find>
+      <find>console</find>
+      <find>map</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/Company.js" />
+        <option value="$PROJECT_DIR$/src/tests/Companies.test.js" />
+        <option value="$PROJECT_DIR$/src/components/company/Companies.js" />
+        <option value="$PROJECT_DIR$/src/tests/mock.json" />
+        <option value="$PROJECT_DIR$/src/tests/Company.test.js" />
+        <option value="$PROJECT_DIR$/src/tests/CreateForm.test.js" />
+        <option value="$PROJECT_DIR$/src/components/headerBar/HeaderBar.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/company/Company.js" />
+        <option value="$PROJECT_DIR$/src/components/companies.js" />
+        <option value="$PROJECT_DIR$/src/components/createForm/CreateForm.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="insiten-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="insiten-react" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="insiten-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="insiten-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="insiten-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="insiten-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="insiten-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="insiten-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="createForm" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/company" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="&lt;Companies/&gt;" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/tests/Companies.test.js" />
+      <test-names>
+        <test-name value="&lt;Companies/&gt;" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="&lt;Company/&gt;" type="JavaScriptTestRunnerJest" temporary="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/tests/Company.test.js" />
+      <test-names>
+        <test-name value="&lt;Company/&gt;" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="&lt;CreateForm/&gt;" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/tests/CreateForm.test.js" />
+      <test-names>
+        <test-name value="&lt;CreateForm/&gt;" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="&lt;CreateForm/&gt;.has the correct status options" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/tests/CreateForm.test.js" />
+      <test-names>
+        <test-name value="&lt;CreateForm/&gt;" />
+        <test-name value="has the correct status options" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="&lt;CreateForm/&gt;.updates the state on change" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/tests/CreateForm.test.js" />
+      <test-names>
+        <test-name value="&lt;CreateForm/&gt;" />
+        <test-name value="updates the state on change" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.&lt;CreateForm/&gt;.updates the state on change" />
+        <item itemvalue="Jest.&lt;CreateForm/&gt;" />
+        <item itemvalue="Jest.&lt;CreateForm/&gt;.has the correct status options" />
+        <item itemvalue="Jest.&lt;Company/&gt;" />
+        <item itemvalue="Jest.&lt;Companies/&gt;" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5b4925c-93f5-41ef-9fd0-9bd5c2ae31da" name="Default Changelist" comment="" />
+      <created>1548517373636</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548517373636</updated>
+      <workItem from="1548517374817" duration="644000" />
+      <workItem from="1549072466921" duration="3590000" />
+      <workItem from="1549417046533" duration="134000" />
+      <workItem from="1549721209995" duration="14000" />
+      <workItem from="1549721253285" duration="1149000" />
+      <workItem from="1550861755863" duration="4641000" />
+      <workItem from="1550954460731" duration="13211000" />
+      <workItem from="1563814533342" duration="2990000" />
+      <workItem from="1563819162227" duration="3205000" />
+      <workItem from="1563828970716" duration="491000" />
+      <workItem from="1564018262848" duration="2000" />
+      <workItem from="1564093487376" duration="9000" />
+      <workItem from="1565303527542" duration="81000" />
+      <workItem from="1565376440068" duration="285000" />
+      <workItem from="1565543803807" duration="7000" />
+      <workItem from="1566568931378" duration="810000" />
+      <workItem from="1566942992942" duration="3000" />
+      <workItem from="1567440917188" duration="13000" />
+      <workItem from="1567440952015" duration="2680000" />
+      <workItem from="1567542102187" duration="5067000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="_CreateForm___updates_the_state_on_change - 2019.07.22 at 13h 17m 26s.xml">
+      <configuration name="&lt;CreateForm/&gt;.updates the state on change" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="_CreateForm___updates_the_state_on_change - 2019.07.22 at 13h 17m 44s.xml">
+      <configuration name="&lt;CreateForm/&gt;.updates the state on change" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="_CreateForm___updates_the_state_on_change - 2019.07.22 at 13h 18m 06s.xml">
+      <configuration name="&lt;CreateForm/&gt;.updates the state on change" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="_CreateForm___updates_the_state_on_change - 2019.07.22 at 13h 18m 37s.xml">
+      <configuration name="&lt;CreateForm/&gt;.updates the state on change" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="_CreateForm___updates_the_state_on_change - 2019.07.22 at 13h 18m 59s.xml">
+      <configuration name="&lt;CreateForm/&gt;.updates the state on change" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="_CreateForm___updates_the_state_on_change - 2019.07.22 at 13h 21m 07s.xml">
+      <configuration name="&lt;CreateForm/&gt;.updates the state on change" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="_CreateForm___updates_the_state_on_change - 2019.07.22 at 13h 21m 32s.xml">
+      <configuration name="&lt;CreateForm/&gt;.updates the state on change" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="_CreateForm___updates_the_state_on_change - 2019.07.22 at 13h 22m 03s.xml">
+      <configuration name="&lt;CreateForm/&gt;.updates the state on change" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="_CreateForm___updates_the_state_on_change - 2019.07.22 at 13h 22m 39s.xml">
+      <configuration name="&lt;CreateForm/&gt;.updates the state on change" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="_CreateForm___updates_the_state_on_change - 2019.07.22 at 13h 22m 46s.xml">
+      <configuration name="&lt;CreateForm/&gt;.updates the state on change" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="39026000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.13261001" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905483" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37551022" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35306123" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.23163265" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13140446" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905483" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.13302217" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35355893" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2765461" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/createForm/CreateForm.js</url>
+          <line>144</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/tests/CreateForm.test.js</url>
+          <line>24</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JavaScriptTestRunnerJest">
+        <watch expression="wrapper.state()" language="JavaScript" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>wrapper.state()</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>wrapper.find(TextField)</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>textField.child().at(1).props()</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>textField.child(1).props()</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>textField.childAt(1).props()</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>textField.props().children</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>textField.props[1]()</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>textField.props()</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>select.props().children[1].key</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>select.props().children[1]</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/company/companies.json" />
+    <entry file="file://$PROJECT_DIR$/src/tests/Companies.test.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/company/Companies.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/jest-jasmine2/build/queue_runner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="68" column="32" lean-forward="true" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/mock.json" />
+    <entry file="file://$PROJECT_DIR$/src/components/headerBar/HeaderBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js" />
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/Company.test.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/company/Company.js" />
+    <entry file="file://$PROJECT_DIR$/src/tests/CreateForm.test.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/company.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/companies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/createForm/CreateForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

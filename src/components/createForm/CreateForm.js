@@ -6,18 +6,10 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import MenuItem from "@material-ui/core/MenuItem";
 import Button from "@material-ui/core/Button";
-
 import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 
-
-const status = [
-    {value: "pending", label: "Pending"},
-    {value: "approved", label: "Approved"},
-    {value: "researching", label: "Researching"},
-    {value: "denied", label: "Denied"}
-];
 
 const styles = {
     container: {
@@ -33,32 +25,26 @@ const styles = {
     }
 };
 
+//need to figure out how to create a record correctly
+//all fields are fine except select
+//then need to send the company down into the props,
+//then clear form state don't want to save entries into form state because unnecessary
+
+
 export default class CreateForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            companyList: [
-                {
-                    companyCode: "",
-                    companyName: "",
-                    status: [status],
-                    companyInfo: "",
-                    keyContacts: "",
-                    financialPerf: ""
-                }
-            ]
+            companyList: {}
         };
     }
 
-    addItem = e => {
-        console.log(e)
+    addItem = ()=> {
+        console.log(this.state)
     };
 
     handleChange = name => event => {
-        this.setState({
-            companyList: [...this.state.companyList, {name: event.target.value}]
-        });
-        console.log(this.state);
+        this.setState({...this.state.companyList, companyList: {[name]: event.target.value}});
     };
 
     render() {
@@ -84,10 +70,7 @@ export default class CreateForm extends React.Component {
                                             placeholder="ABC123"
                                             margin="normal"
                                             style={styles.textField}
-                                            value={this.state.companyCode}
-                                            onChange={e => {
-                                                this.handleChange("companyCode");
-                                            }}
+                                            onChange={this.handleChange("Company Code")}
                                         />
 
                                         <TextField
@@ -96,20 +79,17 @@ export default class CreateForm extends React.Component {
                                             placeholder="ABC Real Estate"
                                             margin="normal"
                                             style={styles.textField}
-                                            onChange={e => {
-                                                this.setState({"Company Name": e.target.value});
-                                            }}
-                                        />
+                                            onChange={this.handleChange("Company Name")}
+                                            />
 
                                         <FormHelperText style={styles.textField}>
                                             Status
                                         </FormHelperText>
                                         <Select
-                                            value={this.state.status}
-                                            onChange={this.handleChange}
+                                            onChange={this.handleChange("Status")}
                                             inputProps={{value: "pending", label: "Pending"}}
                                             style={styles.textField}
-                                            helperText="Status"
+                                            helpertext="Status"
                                         >
                                             <MenuItem value="pending">Pending</MenuItem>
                                             <MenuItem value="approved">Approved</MenuItem>
@@ -126,24 +106,17 @@ export default class CreateForm extends React.Component {
                                             multiline
                                             rowsMax="6"
                                             style={styles.textField}
-                                            value={this.state.multiline}
                                             margin="normal"
-                                            onChange={e => {
-                                                this.setState({"Company Synopsis": e.target.value});
-                                            }}
+                                            onChange={this.handleChange("Company Synopsis")}
                                         />
                                         <TextField
                                             id="standard-multiline-flexible"
                                             label="Key Contacts"
                                             multiline
                                             rowsMax="6"
-                                            value={this.state.multiline}
                                             style={styles.textField}
                                             margin="normal"
-                                            onChange={e => {
-                                                this.setState({"Key Contacts": e.target.value});
-                                                console.log(this.state);
-                                            }}
+                                            onChange={this.handleChange("Key Contacts")}
                                         />
                                         <Button className="submit"
                                                 onClick={e => this.addItem(e)}
@@ -158,7 +131,7 @@ export default class CreateForm extends React.Component {
                 </div>
                 <div>
                     <Companies
-                        companyList={this.state.companyList}
+                        companyCard={this.state.companyList}
                         deleteItem={company => this.deleteItem(company)}
                         handleEdit={(currentData, newData) =>
                             this.handleEdit(currentData, newData)
